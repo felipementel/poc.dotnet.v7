@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlunoNota", "AlunoNota.csproj", "{732A49AA-623D-4F62-BCE2-8ED968712FD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{732A49AA-623D-4F62-BCE2-8ED968712FD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{732A49AA-623D-4F62-BCE2-8ED968712FD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{732A49AA-623D-4F62-BCE2-8ED968712FD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{732A49AA-623D-4F62-BCE2-8ED968712FD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F40DDDA-4993-4067-AAB5-0B32D8F4B994}
+	EndGlobalSection
+EndGlobal

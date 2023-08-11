@@ -1,0 +1,15 @@
+C:\Proj\DEPLOY\CalculoNota\ProjetoAlunoNota\bin\Debug\net7.0\AlunoNota.exe
+C:\Proj\DEPLOY\CalculoNota\ProjetoAlunoNota\bin\Debug\net7.0\AlunoNota.deps.json
+C:\Proj\DEPLOY\CalculoNota\ProjetoAlunoNota\bin\Debug\net7.0\AlunoNota.runtimeconfig.json
+C:\Proj\DEPLOY\CalculoNota\ProjetoAlunoNota\bin\Debug\net7.0\AlunoNota.dll
+C:\Proj\DEPLOY\CalculoNota\ProjetoAlunoNota\bin\Debug\net7.0\AlunoNota.pdb
+C:\Proj\DEPLOY\CalculoNota\ProjetoAlunoNota\obj\Debug\net7.0\AlunoNota.csproj.AssemblyReference.cache
+C:\Proj\DEPLOY\CalculoNota\ProjetoAlunoNota\obj\Debug\net7.0\AlunoNota.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proj\DEPLOY\CalculoNota\ProjetoAlunoNota\obj\Debug\net7.0\AlunoNota.AssemblyInfoInputs.cache
+C:\Proj\DEPLOY\CalculoNota\ProjetoAlunoNota\obj\Debug\net7.0\AlunoNota.AssemblyInfo.cs
+C:\Proj\DEPLOY\CalculoNota\ProjetoAlunoNota\obj\Debug\net7.0\AlunoNota.csproj.CoreCompileInputs.cache
+C:\Proj\DEPLOY\CalculoNota\ProjetoAlunoNota\obj\Debug\net7.0\AlunoNota.dll
+C:\Proj\DEPLOY\CalculoNota\ProjetoAlunoNota\obj\Debug\net7.0\refint\AlunoNota.dll
+C:\Proj\DEPLOY\CalculoNota\ProjetoAlunoNota\obj\Debug\net7.0\AlunoNota.pdb
+C:\Proj\DEPLOY\CalculoNota\ProjetoAlunoNota\obj\Debug\net7.0\AlunoNota.genruntimeconfig.cache
+C:\Proj\DEPLOY\CalculoNota\ProjetoAlunoNota\obj\Debug\net7.0\ref\AlunoNota.dll
