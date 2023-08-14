@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AlunoNota
-build_property.ProjectDir = C:\Proj\DEPLOY\CalculoNota\ProjetoAlunoNota\
+build_property.ProjectDir = C:\Proj\DEPLOY\CalculoNota\ProjetoAlunoNota\poc.dotnet.v7\src\
