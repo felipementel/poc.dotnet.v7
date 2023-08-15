@@ -2,6 +2,8 @@
 
 class Program
 {
+    public static List<Aluno> alunos = null;
+
     static void Main(string[] args)
     {
         Console.Clear();
@@ -11,27 +13,20 @@ class Program
         Console.WriteLine("************ Sistema de alunos e notas **********************");
         Console.WriteLine("*************************************************************");
 
-        List<Aluno> Alunos = new List<Aluno>();
-        Aluno Aluno;
+        alunos = new List<Aluno>();
+        Aluno aluno;
         do
         {
-            Aluno = new Aluno();
+            aluno = new Aluno();
 
             Console.Write("\nInforme o nome do aluno: ");
-            Aluno.Nome = Console.ReadLine();
+            aluno.Nome = Console.ReadLine();            
 
-            foreach (Disciplinas disciplina in (Disciplinas[])Enum.GetValues(typeof(Disciplinas)))
-            {
-                Console.Write($"Informe a nota do {Aluno.Nome} para a disciplina {disciplina}: ");
+            PreencherNotas(aluno);
 
-                string? NotaTemp = Console.ReadLine();
-                Aluno.NotaPorDisciplina.Add(disciplina, float.Parse(NotaTemp));
-            }
-
-            Alunos.Add(Aluno);
+            alunos.Add(aluno);
 
             Console.WriteLine();
-
 
         } while (ValidarSimNao());
 
@@ -39,18 +34,38 @@ class Program
         Console.WriteLine("REPORT");
         Console.WriteLine("");
         Console.WriteLine("****" + nameof(AprovarReprovarAlunos));
-        AprovarReprovarAlunos(Alunos);
+        AprovarReprovarAlunos(alunos);
 
         Console.WriteLine("EscreveListaAlunos");
 
         //Calcular Nota Geral
-        CalculoMediaGeral(Alunos);
+        CalculoMediaGeral(alunos);
 
-        EscreveListaAlunos(Alunos);
+        EscreveListaAlunos(alunos);
 
         // Calcular menor nota
-        //TODO: Felipe
-        CaluloMenorCR(Alunos);
+        CaluloMenorCR(alunos);
+
+        Console.Write("Pressione uma tecla para sair");
+        Console.ReadKey();
+    }
+
+    public static void PreencherNotas(Aluno aluno)
+    {
+        foreach (Disciplinas disciplina in (Disciplinas[])Enum.GetValues(typeof(Disciplinas)))
+        {
+            string notaTemp = string.Empty;
+            float nota = 0f;
+            do
+            {
+                Console.Write($"Informe a nota do {aluno.Nome} para a disciplina {disciplina}: ");
+
+                notaTemp = Console.ReadLine();
+
+            } while (float.TryParse(notaTemp, out nota) == false);
+
+            aluno.NotaPorDisciplina.Add(disciplina, nota);
+        }
     }
 
     private static bool ValidarSimNao()
@@ -96,7 +111,7 @@ class Program
             }
             else
             {
-                item.Status = Status.Reprovad;
+                item.Status = Status.Reprovado;
             }
         }
 
@@ -204,13 +219,13 @@ public enum Status
 {
     None = 0,
     Aprovado = 1,
-    Reprovad = 2
+    Reprovado = 2
 }
 
 public enum Disciplinas
 {
-    Historia,
-    Matematica,
-    Fisica,
+    História,
+    Matemática,
+    Física,
     Geografia
 }
